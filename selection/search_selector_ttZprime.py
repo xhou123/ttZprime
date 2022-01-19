@@ -77,6 +77,7 @@ class Producer(Module):
   if not self.sumNumEvt%self.prescaleEvt==0: return False
   passCut = 0 
 
+  '''
   #Primary vertex (loose PV selection)
   if not event.PV_npvs>0:             #total number of reconstructed primary vertices
    effevt(passCut,self,event)
@@ -107,7 +108,7 @@ class Producer(Module):
    effevt(passCut,self,event)
    return False
   passCut = passCut+1  #passCut = 4
-
+  '''
 
   #Jet
   #1-> common jet
@@ -127,12 +128,17 @@ class Producer(Module):
   #0-> W Jet
   #1-> Top Jet
   fatjets = Collection(event, 'FatJet')
+  self.out.FatJet_particleNetMD_QCD.clear()
+  self.out.FatJet_particleNetMD_Xbb.clear()
+  self.out.FatJet_particleNetMD_Xcc.clear()
+  self.out.FatJet_particleNetMD_Xqq.clear()
+  self.out.FatJet_msoftdrop.clear()
   for ifatjet in range(event.nFatJet):
     self.out.FatJet_particleNetMD_QCD.push_back(event.FatJet_particleNetMD_QCD[ifatjet])
     self.out.FatJet_particleNetMD_Xbb.push_back(event.FatJet_particleNetMD_Xbb[ifatjet])
     self.out.FatJet_particleNetMD_Xcc.push_back(event.FatJet_particleNetMD_Xcc[ifatjet])
     self.out.FatJet_particleNetMD_Xqq.push_back(event.FatJet_particleNetMD_Xqq[ifatjet])
- 
+    self.out.FatJet_msoftdrop.push_back(event.FatJet_msoftdrop[ifatjet])
 
   '''
   #W tagger

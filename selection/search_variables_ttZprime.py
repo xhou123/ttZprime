@@ -55,7 +55,7 @@ class search_variables(object):
   self.add_vectorFloat(self.Events,"FatJet_particleNetMD_Xcc")
   self.add_vectorFloat(self.Events,"FatJet_particleNetMD_Xqq")
   self.add_vectorFloat(self.Events,"FatJet_particleNetMD_QCD")
-
+  self.add_vectorFloat(self.Events,"FatJet_msoftdrop")
 
  def add_float(self,tree,name,dtype=np.dtype(float)):
   if hasattr(self,name):
