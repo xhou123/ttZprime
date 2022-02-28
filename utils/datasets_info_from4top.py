@@ -26,8 +26,6 @@ datasets_info = [
 #####
 ##   Type:MC
 #####  
-#ZprimetoTT
-#[2017,"BkgMC","ZprimeToTT","/ZprimeToTT_M3000_W30_TuneCP2_PSweights_13TeV-madgraph-pythiaMLM-pythia8/RunIISummer20UL17NanoAOD-106X_mc2017_realistic_v6-v1/NANOAODSIM",1,192535,1,"ttZprime"],
 #####
 ##   Background
 #####
@@ -94,8 +92,16 @@ datasets_info = [
 #tZq
 [2016,"BkgMC","tZq_ll","/tZq_ll_4f_ckm_NLO_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM",0.0758,3.967e+06,1,"ttZprime"],
 #ST
-[2016,"BkgMC","ST_t-channel_top_4f_InclusiveDecay","/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM",136.02,6.3073e+07,1,"ttZprime"],
-[2016,"BkgMC","ST_t-channel_antitop_4f_inclusiveDecays","/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM",80.95,3.0609e+07,1,"ttZprime"],
+[2016,"BkgMC","ST_t-channel_top","/ST_t-channel_top_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM",136.02,6.3073e+07,1,"ttZprime"],
+[2016,"BkgMC","ST_t-channel_antitop","/ST_t-channel_antitop_4f_InclusiveDecays_TuneCP5_13TeV-powheg-madspin-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM",80.95,3.0609e+07,1,"ttZprime"],
+[2016,"BkgMC","ST_tW_top","/ST_tW_top_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v2/NANOAODSIM",34.91,2.491e+06,1,"ttZprime"],
+[2016,"BkgMC","ST_tW_antitop","/ST_tW_antitop_5f_inclusiveDecays_TuneCP5_13TeV-powheg-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v2/NANOAODSIM",34.97,2.554e+06,1,"ttZprime"],
+#DY
+[2016,"BkgMC","DYJetsToLL","/DYJetsToLL_M-50_TuneCP5_13TeV-madgraphMLM-pythia8/RunIISummer20UL16NanoAODv2-106X_mcRun2_asymptotic_v15-v1/NANOAODSIM",14420,1.04072004e+08,1,"ttZprime"],
+[2016,"BkgMC","DYJetsToLLFXFX","/DYJetsToLL_M-50_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM",6077,7.1839442e+07,1,"ttZprime"],
+#[2016,"BkgMC","DYJetsToLLFXFX_2j","/DYJetsToLL_2J_TuneCP5_13TeV-amcatnloFXFX-pythia8/RunIISummer20UL16NanoAODv9-106X_mcRun2_asymptotic_v17-v1/NANOAODSIM",,4.1816675e+07,1,"ttZprime"],
+
+
 #####
 #TTTT_APV
 [2016,"BkgMC","TTTT_APV","/TTTT_TuneCP5_13TeV-amcatnlo-pythia8/RunIISummer20UL16NanoAODAPVv2-106X_mcRun2_asymptotic_preVFP_v9-v1/NANOAODSIM",0.012,4.233e+06,1,"ttZprime"],
